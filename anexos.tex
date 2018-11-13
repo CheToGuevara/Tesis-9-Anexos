@@ -1,0 +1,61 @@
+\documentclass[12pt,a4paper,twoside,english]{book}
+
+\usepackage{Formato}
+
+\title{Tesis 9 Anexos }
+\author{Aaron Sújar}
+
+\begin{document}
+\frontmatter
+
+
+
+\pagenumbering{roman}
+
+%\include{ack}
+
+
+\tableofcontents
+\mainmatter
+\setboolean{@twoside}{false}
+\input{criterios}
+
+\section{Cuestionario Comparación COR vs FEM }
+\includepdf[pages=-,frame,nup=3x3,scale=0.8]{PDFs/Real-timeQ}
+\label{anexo:cuestionario1}
+
+\section{Cuestionario Comparación COR vs FEM v2 }
+\includepdf[pages=-,nup=3x3,frame,scale=0.8]{PDFs/DeformationQ}
+\label{anexo:cuestionario2}
+
+\section{An Interactive Algorithm for Virtual Patient Positioning }
+\includepdf[pages=-,nup=2x1,frame,scale=0.9]{PDFs/ceig}
+\label{anexo:ceig}
+
+\section{gVirtualXRay: Virtual X-Ray Imaging Library on GPU}\todo{metemos el de la confernecia de viktor en el que est ami nomrbe?}
+\label{anexo:cguk}
+\includepdf[pages=-,nup=2x1,frame,scale=0.9]{PDFs/cguk}
+
+\section{Real-time animation of human characters’ anatomy}
+\label{anexo:cag}
+\includepdf[pages=-,nup=2x1,frame,scale=0.9]{PDFs/cag}
+
+
+\section{X-Ray Projectional Simulator: a teaching tool}
+%\label{anexo:cag}
+%\includepdf[frame,scale=0.8]{PDFs/cag}
+
+\section{Rigging para cada hueso}
+\label{anexo:rigging}
+\includepdf[pages=-,nup=3x3,frame,scale=0.9]{PDFs/Supplementary}
+
+
+
+%\appendix
+%\include{appendix}
+\cleardoublepage
+% Como incorporar como un capitulo mas en el indice de la bibliografia
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliography{bibliography}
+\bibliographystyle{alpha}
+\end{document}
