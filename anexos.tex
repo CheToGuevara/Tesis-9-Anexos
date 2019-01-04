@@ -1,53 +1,91 @@
 \documentclass[12pt,a4paper,twoside,english]{book}
 
 \usepackage{Formato}
-
+\usepackage{sectsty}
 \title{Tesis 9 Anexos }
 \author{Aaron Sújar}
 
 \begin{document}
 \frontmatter
 
-
+\include{Acronyms}
 
 \pagenumbering{roman}
 
 %\include{ack}
 
-
+%\appendix
+\chapter*{Apéndices}
 \tableofcontents
 \mainmatter
 \setboolean{@twoside}{false}
+
+
+
+
+\includepdf[pages=1,landscape,scale=0.8,
+pagecommand={\section{Descripción del procedimiento de \ac{RA}}
+\label{anexo:RA}},linktodoc=true]{PDFs/RA}
+\includepdf[pages=2-,landscape,scale=0.85,pagecommand={},linktodoc=true]{PDFs/RA}
+
+
+\includepdf[pages=1,scale=0.8,
+pagecommand={\section{Rigging para cada hueso}
+\label{anexo:rigging}},linktodoc=true]{PDFs/Supplementary}
+\includepdf[pages=2-,scale=0.88,pagecommand={},linktodoc=true]{PDFs/Supplementary}
+
 \input{criterios}
+%\label{anexo:RA}
 
-\section{Cuestionario Comparación COR vs FEM }
-\includepdf[pages=-,frame,nup=3x3,scale=0.8]{PDFs/Real-timeQ}
-\label{anexo:cuestionario1}
+% \section{Cuestionario Comparación COR vs FEM }
+% \includepdf[pages=-,pagecommand={},frame,nup=3x3,scale=0.75]{PDFs/Real-timeQ}
+% \label{anexo:cuestionario1}
 
-\section{Cuestionario Comparación COR vs FEM v2 }
-\includepdf[pages=-,nup=3x3,frame,scale=0.8]{PDFs/DeformationQ}
-\label{anexo:cuestionario2}
+%\chapter{Cuestionario Comparación COR vs FEM }
 
-\section{An Interactive Algorithm for Virtual Patient Positioning }
-\includepdf[pages=-,nup=2x1,frame,scale=0.9]{PDFs/ceig}
-\label{anexo:ceig}
+\includepdf[pages=1,scale=0.8,
+pagecommand={\section{Cuestionario Comparación COR vs FEM}
+\label{anexo:cuestionario2}},linktodoc=true]{PDFs/DeformationQ}
+\includepdf[pages=2-,scale=0.9,nup=2x2,pagecommand={},linktodoc=true]{PDFs/DeformationQ}
 
-\section{gVirtualXRay: Virtual X-Ray Imaging Library on GPU}\todo{metemos el de la confernecia de viktor en el que est ami nomrbe?}
-\label{anexo:cguk}
-\includepdf[pages=-,nup=2x1,frame,scale=0.9]{PDFs/cguk}
+\includepdf[pages=1,scale=0.8,
+pagecommand={\section{Carta describiendo los errores econtrados en los dispositivos Touch}
+\label{anexo:geomagic}},linktodoc=true]{PDFs/GeoMagic}
+\includepdf[pages=2-,scale=1,pagecommand={},linktodoc=true]{PDFs/GeoMagic}
 
-\section{Real-time animation of human characters’ anatomy}
-\label{anexo:cag}
-\includepdf[pages=-,nup=2x1,frame,scale=0.9]{PDFs/cag}
+\includepdf[pages=1,scale=0.8,
+pagecommand={\section{Cuestionario de validez aparente y de contenido}
+\label{anexo:cuestionarioxray}},linktodoc=true]{PDFs/xraysurvey}
+\includepdf[pages=2-,scale=0.9,pagecommand={},linktodoc=true]{PDFs/xraysurvey}
 
 
-\section{X-Ray Projectional Simulator: a teaching tool}
-%\label{anexo:cag}
-%\includepdf[frame,scale=0.8]{PDFs/cag}
 
-\section{Rigging para cada hueso}
-\label{anexo:rigging}
-\includepdf[pages=-,nup=3x3,frame,scale=0.9]{PDFs/Supplementary}
+
+\includepdf[pages=1,scale=0.8,
+pagecommand={\section{An Interactive Algorithm for Virtual Patient Positioning}
+\label{anexo:ceig}},linktodoc=true]{PDFs/ceig}
+\includepdf[pages=2-,scale=1,pagecommand={},linktodoc=true]{PDFs/ceig}
+
+
+\includepdf[pages=1,scale=0.8,
+pagecommand={\section{gVirtualXRay: Virtual X-Ray Imaging Library on GPU}
+\label{anexo:cguk}},linktodoc=true]{PDFs/cguk}
+\includepdf[pages=2-,scale=1,pagecommand={},linktodoc=true]{PDFs/cguk}
+
+
+\includepdf[pages=1,scale=0.8,
+pagecommand={\section{Real-time animation of human characters’ anatomy}
+\label{anexo:cag}},linktodoc=true]{PDFs/cag}
+\includepdf[pages=2-,scale=0.9,pagecommand={},linktodoc=true]{PDFs/cag}
+
+
+\includepdf[pages=1,scale=0.8,
+pagecommand={\section{Interactive learning environment for diagnostic radiographywith real-time X-ray simulation and patient positioning}
+\label{anexo:xray}},linktodoc=true]{PDFs/XRAY}
+\includepdf[pages=2-,scale=1,pagecommand={},linktodoc=true]{PDFs/XRAY}
+
+
+
 
 
 
