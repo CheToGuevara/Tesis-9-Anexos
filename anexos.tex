@@ -14,27 +14,30 @@
 
 %\include{ack}
 
-%\appendix
-\chapter*{Apéndices}
+
+%\chapter*{Apéndices}
 \tableofcontents
 \mainmatter
+
+
 \setboolean{@twoside}{false}
 
 
+%\renewcommand{\thechapter}{\Alph{chapter}}%
 
-
-\includepdf[pages=1,landscape,scale=0.8,
-pagecommand={\section{Descripción del procedimiento de \ac{RA}}
+\includepdf[pages=1,landscape,scale=0.7,offset=0 -4cm,
+pagecommand={\chapter{Descripción del procedimiento de \ac{RA}}
 \label{anexo:RA}},linktodoc=true]{PDFs/RA}
 \includepdf[pages=2-,landscape,scale=0.85,pagecommand={},linktodoc=true]{PDFs/RA}
 
 
 \includepdf[pages=1,scale=0.8,
-pagecommand={\section{Rigging para cada hueso}
+pagecommand={\chapter{Rigging para cada hueso}
 \label{anexo:rigging}},linktodoc=true]{PDFs/Supplementary}
 \includepdf[pages=2-,scale=0.88,pagecommand={},linktodoc=true]{PDFs/Supplementary}
 
 \input{criterios}
+
 %\label{anexo:RA}
 
 % \section{Cuestionario Comparación COR vs FEM }
@@ -44,7 +47,7 @@ pagecommand={\section{Rigging para cada hueso}
 %\chapter{Cuestionario Comparación COR vs FEM }
 
 \includepdf[pages=1,scale=0.8,
-pagecommand={\section{Cuestionario Comparación COR vs FEM}
+pagecommand={\chapter{Cuestionario Comparación COR vs FEM}
 \label{anexo:cuestionario2}},linktodoc=true]{PDFs/DeformationQ}
 \includepdf[pages=2-,scale=0.9,nup=2x2,pagecommand={},linktodoc=true]{PDFs/DeformationQ}
 

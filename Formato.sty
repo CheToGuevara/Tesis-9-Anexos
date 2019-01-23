@@ -16,10 +16,13 @@
 \usepackage[pdftex]{graphicx}
 
 
+%\newcommand{\appendixtitleoff}{\@dotitle@ppfalse}
+
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{}
- \renewcommand{\chaptermark}[1]{ \markboth{ \chaptername\ \thechapter.\ #1}{}}
+%\fancyhf{}
+ \renewcommand{\chaptermark}[1]{ \markboth{ \chaptername\  \thechapter.\ #1}{}}
  \renewcommand{\sectionmark}[1]{ \markright{ \thesection.\ #1}}
  \fancyhead[LE]{ \textsf{\leftmark} }
  \fancyhead[RO]{ \textsf{\rightmark} }
